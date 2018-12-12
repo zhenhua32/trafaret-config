@@ -148,12 +148,12 @@ ConfigLoader.add_constructor(
 
 
 def read_and_validate(filename, trafaret, vars=os.environ):
-    with open(filename) as input:
+    with open(filename, encoding='utf-8') as input:
         return _validate_input(input, trafaret, filename=filename, vars=vars)
 
 
 def read_and_get_vars(filename, trafaret, vars=os.environ):
-    with open(filename) as input:
+    with open(filename, encoding='utf-8') as input:
         errors = []
         loader = ConfigLoader(input, vars, errors)
         try:
