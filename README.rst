@@ -92,7 +92,6 @@ Installation
 
 ::
 
-    pip install trafaret-config==2.0.2
     pip install git+https://github.com/zhenhua32/trafaret-config.git
 
 
