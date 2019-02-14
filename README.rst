@@ -11,6 +11,8 @@ This is a wrapper that loads yaml and checks config using trafaret_ while
 keeping track of actual lines of file where error has happened. Additionally,
 it can pretty print the error.
 
+default_config should use **utf-8** encoding.
+
 Basic Usage:
 
 .. code-block:: python
